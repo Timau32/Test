@@ -66,4 +66,57 @@ module.exports = {
       ],
     }),
   },
+
+  courseOptions: {
+    reply_markup: JSON.stringify({
+      inline_keyboard: [
+        [
+          {
+            text: "1-курс",
+            callback_data: "first",
+          },
+          {
+            text: "2-курс",
+            callback_data: "second",
+          },
+        ],
+        [
+          {
+            text: "3-курс",
+            callback_data: "third",
+          },
+          {
+            text: "4-курс",
+            callback_data: "fourth",
+          },
+        ],
+      ],
+    }),
+  },
+  groupOptions: {
+    reply_markup: JSON.stringify({
+      inline_keyboard: [
+        [
+          {
+            text: "ПМИ(б)-1-18",
+            callback_data: "first_pmi",
+          },
+          {
+            text: "ПО(б)-1-18",
+            callback_data: "second_po",
+          },
+        ],
+        [
+          {
+            text: "ИСТ-2-20",
+            callback_data: "third_ist",
+          },
+          {
+            text: "АСОИ-1-19",
+            callback_data: "fourth_asoi",
+          },
+        ],
+      ],
+    }),
+  },
 };
